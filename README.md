@@ -193,11 +193,11 @@ Sempre que um novo push é feito na branch `main` ou uma nova tag de release é 
 2. Faz login no GitHub Container Registry utilizando o token automático do GitHub.
 3. Extrai os metadados (tags e labels).
 4. Constrói a imagem Docker baseada no `Dockerfile` contendo a API FastAPI e o modelo de ML.
-5. Publica a imagem no repositório correspondente (`ghcr.io/joaonovo/FIAP_10IADT-tech_challenge_fase_1`).
+5. Publica a imagem no repositório correspondente (`ghcr.io/joaonovo/fiap_10iadt-tech_challenge_fase_1:latest`).
 
 Dessa forma, a imagem fica disponível para ser baixada e executada em qualquer servidor com Docker instalado de forma facilitada:
 
 ```bash
-docker pull ghcr.io/joaonovo/FIAP_10IADT-tech_challenge_fase_1:latest
-docker run -d -p 8000:8000 ghcr.io/joaonovo/FIAP_10IADT-tech_challenge_fase_1:latest
+docker pull ghcr.io/joaonovo/fiap_10iadt-tech_challenge_fase_1:latest
+docker run -d -p 8000:8000 ghcr.io/joaonovo/fiap_10iadt-tech_challenge_fase_1:latest
 ```
